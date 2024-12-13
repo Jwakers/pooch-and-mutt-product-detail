@@ -1,17 +1,31 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      backgroundColor: {
+        primary: "var(--neutral-0)",
+        secondary: "var(--cream-200)",
+        invert: "var(--neutral-1000)",
+        brand: "var(--brand-50)",
+      },
+      opacity: {
+        "04": "0.04",
+        "06": "0.06",
+      },
+    },
     fontFamily: {
       sans: "var(--font-poppins)",
     },
     colors: {
       black: "rgb(0, 0, 0)",
+      blue: { DEFAULT: "var(--blue-900)" },
       neutral: {
         "0": "var(--neutral-0)",
         "50": "var(--neutral-50)",
@@ -58,12 +72,6 @@ export default {
       invert: "var(--neutral-0)",
       brand: "var(--purple-500)",
     },
-    backgroundColor: {
-      primary: "var(--neutral-0)",
-      secondary: "var(--cream-200)",
-      invert: "var(--neutral-1000)",
-      brand: "var(--brand-50)",
-    },
     border: {
       primary: "var(--neutral-1000)",
       secondary: "rgba(0, 0, 0, .3)",
@@ -77,86 +85,93 @@ export default {
       full: "9999px",
     },
     spacing: {
-      "1": "0.125rem", // 2px
-      "2": "0.25rem", // 4px
-      "3": "0.375rem", // 6px
-      "4": "0.5rem", // 8px
-      "5": "0.75rem", // 12px
-      "6": "1rem", // 16px
-      "7": "1.25rem", // 20px
-      "8": "1.5rem", // 24px
-      "9": "2rem", // 32px
-      "10": "2.5rem", // 40px
-      "11": "3.75rem", // 60px
-      "12": "5rem", // 80px
-      "13": "7.5rem", // 120px
-      "14": "10rem", // 160px
+      "1": "0.125rem",
+      "2": "0.25rem",
+      "3": "0.375rem",
+      "4": "0.5rem",
+      "5": "0.75rem",
+      "6": "1rem",
+      "7": "1.25rem",
+      "8": "1.5rem",
+      "9": "2rem",
+      "10": "2.5rem",
+      "11": "3.75rem",
+      "12": "5rem",
+      "13": "7.5rem",
+      "14": "10rem",
     },
     fontSize: {
       display: [
-        "2.375rem", // 38px
+        "2.375rem",
         {
-          lineHeight: "3rem", // 48px
+          lineHeight: "3rem",
           fontWeight: 700,
         },
       ],
       h1: [
-        "2rem", // 32px
+        "2rem",
         {
-          lineHeight: "2.375rem", // 38px
+          lineHeight: "2.375rem",
           fontWeight: 700,
         },
       ],
       h2: [
-        "1.625rem", // 26px
+        "1.625rem",
         {
-          lineHeight: "2rem", // 32px
+          lineHeight: "2rem",
           fontWeight: 700,
         },
       ],
       h3: [
-        "1.375rem", // 22px
+        "1.375rem",
         {
-          lineHeight: "1.75rem", // 28px
+          lineHeight: "1.75rem",
           fontWeight: 700,
         },
       ],
       s1: [
-        "1.125rem", // 18px
+        "1.125rem",
         {
-          lineHeight: "1.625rem", // 26px
+          lineHeight: "1.625rem",
           fontWeight: 500,
         },
       ],
       s2: [
-        "1rem", // 16px
+        "1rem",
         {
-          lineHeight: "1.5rem", // 24px
+          lineHeight: "1.5rem",
           fontWeight: 500,
         },
       ],
       p1: [
-        "1.125rem", // 18px
+        "1.125rem",
         {
-          lineHeight: "1.625rem", // 26px
+          lineHeight: "1.625rem",
           fontWeight: 400,
         },
       ],
       p2: [
-        "1rem", // 16px
+        "1rem",
         {
-          lineHeight: "1.5rem", // 24px
+          lineHeight: "1.5rem",
           fontWeight: 400,
         },
       ],
       c1: [
-        "0.625rem", // 10px
+        "0.625rem",
         {
-          lineHeight: "0.875rem", // 14px
+          lineHeight: "0.875rem",
           fontWeight: 400,
+        },
+      ],
+      "button-default": [
+        "1rem",
+        {
+          lineHeight: "1em",
+          fontWeight: 500,
         },
       ],
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

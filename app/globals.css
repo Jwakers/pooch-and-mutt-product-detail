@@ -2,57 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: var(--neutral-0);
-  --foreground: var(--neutral-1000);
-
-  --neutral-0:rgb(255, 255, 255);
-  --neutral-50:rgb(242, 242, 242);
-  --neutral-100:rgb(229, 229, 229);
-  --neutral-150:rgb(216, 216, 216);
-  --neutral-200:rgb(204, 204, 204);
-  --neutral-300:rgb(178, 178, 178);
-  --neutral-400:rgb(153, 153, 153);
-  --neutral-500:rgb(128, 128, 128);
-  --neutral-600:rgb(102, 102, 102);
-  --neutral-700:rgb(76, 76, 76);
-  --neutral-800:rgb(51, 51, 51);
-  --neutral-900:rgb(25, 25, 25);
-  --neutral-1000:rgb(0, 0, 0);
-
-  --cream-50:rgb(255, 252, 246);
-  --cream-100:rgb(255, 249, 236);
-  --cream-200:rgb(245, 239, 227);
-  --cream-300:rgb(235, 229, 217);
-  --cream-400:rgb(235, 229, 217);
-  --cream-500:rgb(214, 209, 198);
-  --cream-600:rgb(204, 199, 189);
-  --cream-700:rgb(194, 189, 179);
-  --cream-800:rgb(184, 179, 170);
-  --cream-900:rgb(173, 169, 161);
-
-  --purple-50:rgb(251, 244, 251);
-  --purple-100:rgb(241, 220, 241);
-  --purple-200:rgb(234, 203, 235);
-  --purple-300:rgb(225, 179, 226);
-  --purple-400:rgb(219, 165, 220);
-  --purple-500:rgb(210, 142, 211);
-  --purple-600:rgb(191, 129, 192);
-  --purple-700:rgb(149, 101, 150);
-  --purple-800:rgb(116, 78, 116);
-  --purple-900:rgb(88, 60, 89);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    --neutral-0:rgb(255, 255, 255);
+    --neutral-50:rgb(242, 242, 242);
+    --neutral-100:rgb(229, 229, 229);
+    --neutral-150:rgb(216, 216, 216);
+    --neutral-200:rgb(204, 204, 204);
+    --neutral-300:rgb(178, 178, 178);
+    --neutral-400:rgb(153, 153, 153);
+    --neutral-500:rgb(128, 128, 128);
+    --neutral-600:rgb(102, 102, 102);
+    --neutral-700:rgb(76, 76, 76);
+    --neutral-800:rgb(51, 51, 51);
+    --neutral-900:rgb(25, 25, 25);
+    --neutral-1000:rgb(0, 0, 0);
+  
+    --cream-50:rgb(255, 252, 246);
+    --cream-100:rgb(255, 249, 236);
+    --cream-200:rgb(245, 239, 227);
+    --cream-300:rgb(235, 229, 217);
+    --cream-400:rgb(235, 229, 217);
+    --cream-500:rgb(214, 209, 198);
+    --cream-600:rgb(204, 199, 189);
+    --cream-700:rgb(194, 189, 179);
+    --cream-800:rgb(184, 179, 170);
+    --cream-900:rgb(173, 169, 161);
+  
+    --purple-50:rgb(251, 244, 251);
+    --purple-100:rgb(241, 220, 241);
+    --purple-200:rgb(234, 203, 235);
+    --purple-300:rgb(225, 179, 226);
+    --purple-400:rgb(219, 165, 220);
+    --purple-500:rgb(210, 142, 211);
+    --purple-600:rgb(191, 129, 192);
+    --purple-700:rgb(149, 101, 150);
+    --purple-800:rgb(116, 78, 116);
+    --purple-900:rgb(88, 60, 89);
 
-body {
-  @apply text-p2;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+    --blue-900: rgba(0, 56, 255)
+  }
+
+  body {
+    @apply text-p2;
+    font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  }
 }
