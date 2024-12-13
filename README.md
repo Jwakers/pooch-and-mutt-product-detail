@@ -4,7 +4,7 @@
 
 - [x] Add colours to tailwind config
 - [x] Add typography to tailwind config
-- [ ] Add spacing to tailwind config
+- [x] Add spacing to tailwind config
 - [ ] Import correct font files
 - [ ] Add icons
 - [ ] Add logo

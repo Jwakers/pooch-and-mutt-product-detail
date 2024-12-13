@@ -67,6 +67,28 @@ export default {
       minimal: "rgba(0, 0, 0, .15)",
       invert: "var(--neutral-0)",
     },
+    borderRadius: {
+      small: "4px",
+      medium: "8px",
+      large: "20px",
+      full: "9999px",
+    },
+    spacing: {
+      "1": "0.125rem", // 2px
+      "2": "0.25rem", // 4px
+      "3": "0.375rem", // 6px
+      "4": "0.5rem", // 8px
+      "5": "0.75rem", // 12px
+      "6": "1rem", // 16px
+      "7": "1.25rem", // 20px
+      "8": "1.5rem", // 24px
+      "9": "2rem", // 32px
+      "10": "2.5rem", // 40px
+      "11": "3.75rem", // 60px
+      "12": "5rem", // 80px
+      "13": "7.5rem", // 120px
+      "14": "10rem", // 160px
+    },
     fontSize: {
       display: [
         "2.375rem", // 38px
