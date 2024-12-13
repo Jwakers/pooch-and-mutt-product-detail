@@ -7,7 +7,7 @@
 - [x] Add spacing to tailwind config
 - [x] Import correct font files
 - [x] Add icons
-- [ ] Add logo
+- [x] Add logo
 - [ ] Add button component (shadcn)
 - [ ] Add input components: text, radio, select (shadcn)
 
