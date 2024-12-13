@@ -67,6 +67,71 @@ export default {
       minimal: "rgba(0, 0, 0, .15)",
       invert: "var(--neutral-0)",
     },
+    fontSize: {
+      display: [
+        "2.375rem", // 38px
+        {
+          lineHeight: "3rem", // 48px
+          fontWeight: 700,
+        },
+      ],
+      h1: [
+        "2rem", // 32px
+        {
+          lineHeight: "2.375rem", // 38px
+          fontWeight: 700,
+        },
+      ],
+      h2: [
+        "1.625rem", // 26px
+        {
+          lineHeight: "2rem", // 32px
+          fontWeight: 700,
+        },
+      ],
+      h3: [
+        "1.375rem", // 22px
+        {
+          lineHeight: "1.75rem", // 28px
+          fontWeight: 700,
+        },
+      ],
+      s1: [
+        "1.125rem", // 18px
+        {
+          lineHeight: "1.625rem", // 26px
+          fontWeight: 500,
+        },
+      ],
+      s2: [
+        "1rem", // 16px
+        {
+          lineHeight: "1.5rem", // 24px
+          fontWeight: 500,
+        },
+      ],
+      p1: [
+        "1.125rem", // 18px
+        {
+          lineHeight: "1.625rem", // 26px
+          fontWeight: 400,
+        },
+      ],
+      p2: [
+        "1rem", // 16px
+        {
+          lineHeight: "1.5rem", // 24px
+          fontWeight: 400,
+        },
+      ],
+      c1: [
+        "0.625rem", // 10px
+        {
+          lineHeight: "0.875rem", // 14px
+          fontWeight: 400,
+        },
+      ],
+    },
   },
   plugins: [],
 } satisfies Config;

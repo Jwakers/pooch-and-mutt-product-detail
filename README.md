@@ -2,8 +2,8 @@
 
 ## Design system
 
-- [ ] Add colours to tailwind config
-- [ ] Add typography to tailwind config
+- [x] Add colours to tailwind config
+- [x] Add typography to tailwind config
 - [ ] Add spacing to tailwind config
 - [ ] Import correct font files
 - [ ] Add icons
