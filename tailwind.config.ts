@@ -25,7 +25,6 @@ export default {
     },
     colors: {
       black: "rgb(0, 0, 0)",
-      blue: { DEFAULT: "var(--blue-900)" },
       neutral: {
         "0": "var(--neutral-0)",
         "50": "var(--neutral-50)",
