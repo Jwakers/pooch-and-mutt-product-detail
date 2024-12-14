@@ -8,7 +8,7 @@
 - [x] Import correct font files
 - [x] Add icons
 - [x] Add logo
-- [ ] Add button component (shadcn)
+- [x] Add button component (shadcn)
 - [ ] Add input components: text, radio, select (shadcn)
 
 ## Layout
