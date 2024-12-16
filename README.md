@@ -9,18 +9,18 @@
 - [x] Add icons
 - [x] Add logo
 - [x] Add button component (shadcn)
-- [ ] Add input components: text, radio, select, checkbox (shadcn)
+- [x] Add input components: text, radio, select, checkbox (shadcn)
 
 ## Layout
 
-- [ ] Container component
-- [ ] Grid component
-- [ ] Main layout (grid - header, main, footer)
+- [x] Container component
+- [x] Grid component
+- [x] Main layout (grid - header, main, footer)
 
 ## Page
 
 - [ ] Dummy data
-- [ ] Header
+- [x] Header
 - [ ] Gallery
 - [ ] Breadcrumb
 - [ ] Product info

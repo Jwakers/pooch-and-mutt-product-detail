@@ -1,3 +1,5 @@
+import Header from "@/components/layout/header";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -19,7 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <body
+        className={cn(
+          poppins.variable,
+          "grid min-h-dvh grid-rows-[auto,1fr,auto] antialiased",
+        )}
+      >
+        <Header />
+        <main>{children}</main>
+        <footer>{/* placeholder */}</footer>
+      </body>
     </html>
   );
 }

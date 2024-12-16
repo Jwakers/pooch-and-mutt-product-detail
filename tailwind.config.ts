@@ -8,6 +8,11 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      md: "700px",
+      lg: "1100px",
+      xl: "1500px",
+    },
     extend: {
       backgroundColor: {
         primary: "var(--neutral-0)",
@@ -72,7 +77,7 @@ export default {
       invert: "var(--neutral-0)",
       brand: "var(--purple-500)",
     },
-    border: {
+    borderColor: {
       primary: "var(--neutral-1000)",
       secondary: "rgba(0, 0, 0, .3)",
       minimal: "rgba(0, 0, 0, .15)",
