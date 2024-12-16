@@ -1,14 +1,13 @@
 import logo from "@/public/logo-full.svg";
 import Image from "next/image";
 import { Cart, Menu, Search, User } from "../icons";
-import Container from "./container";
 
 const NAV_ITEMS = ["Shop", "find your food", "About", "Blog"];
 
 export default function Header() {
   return (
     <header className="border-b border-minimal py-5">
-      <Container className="grid grid-cols-[1fr_auto_1fr] items-center">
+      <div className="container grid grid-cols-[1fr_auto_1fr] items-center">
         <nav>
           <ul className="hidden items-center md:flex">
             {NAV_ITEMS.map((item) => (
@@ -50,7 +49,7 @@ export default function Header() {
             <Cart />
           </button>
         </div>
-      </Container>
+      </div>
     </header>
   );
 }

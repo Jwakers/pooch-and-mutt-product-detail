@@ -14,11 +14,25 @@ export default {
       xl: "1500px",
     },
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          md: "2rem",
+          lg: "4.5rem",
+          xl: "3rem",
+        },
+        screens: {
+          md: "1680px",
+          lg: "1680px",
+          xl: "1680px",
+        },
+      },
       backgroundColor: {
         primary: "var(--neutral-0)",
         secondary: "var(--cream-200)",
         invert: "var(--neutral-1000)",
-        brand: "var(--brand-50)",
+        brand: "var(--purple-50)",
         disabled: "rgba(0, 0, 0, 0.06)",
       },
       opacity: {
@@ -90,6 +104,7 @@ export default {
       full: "9999px",
     },
     spacing: {
+      "0": "0",
       "1": "0.125rem",
       "2": "0.25rem",
       "3": "0.375rem",

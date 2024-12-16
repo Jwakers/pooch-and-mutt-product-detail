@@ -1,4 +1,6 @@
 import { cn } from "@/lib/utils";
+import { SelectProps } from "@radix-ui/react-select";
+import { FormControl } from "../ui/form";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import {
@@ -23,17 +25,25 @@ export function FormInput({ id, label, ...rest }: FormInputProps) {
   );
 }
 
-type FormSelectProps = Pick<WithLabelProps, "id" | "label">;
+type FormSelectProps = Pick<WithLabelProps, "id" | "label"> & {
+  options: { value: string | number; text: string }[];
+} & SelectProps;
 
-export function FormSelect({ id, label, ...rest }: FormSelectProps) {
+export function FormSelect({ id, label, options, ...rest }: FormSelectProps) {
   return (
     <WithLabel id={id} label={label}>
       <Select {...rest}>
-        <SelectTrigger>
-          <SelectValue placeholder={label} />
-        </SelectTrigger>
+        <FormControl>
+          <SelectTrigger>
+            <SelectValue placeholder={label} />
+          </SelectTrigger>
+        </FormControl>
         <SelectContent>
-          <SelectItem value="1">Option 1</SelectItem>
+          {options.map(({ value, text }) => (
+            <SelectItem key={value} value={String(value)}>
+              {text}
+            </SelectItem>
+          ))}
         </SelectContent>
       </Select>
     </WithLabel>
@@ -48,7 +58,7 @@ type WithLabelProps = React.PropsWithChildren<{
 
 function WithLabel({ id, label, children, ...rest }: WithLabelProps) {
   return (
-    <div className="inline-flex flex-col-reverse gap-3">
+    <div className="flex flex-col-reverse gap-3">
       {children}
       <Label htmlFor={id} {...rest}>
         {label}
