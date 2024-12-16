@@ -8,22 +8,22 @@ import {
   BreadcrumbSeparator,
 } from "./ui/breadcrumb";
 
-const BREADCRUMB_DATA = [
-  {
-    title: "Shop all",
-    url: "/",
-  },
-  {
-    title: "Dry dog food",
-    url: "/",
-  },
-  {
-    title: "Health & Digestion Dry Food",
-    url: "/",
-  },
-];
-
 export default function Breadcrumbs() {
+  const BREADCRUMB_DATA = [
+    {
+      title: "Shop all",
+      url: "/",
+    },
+    {
+      title: "Dry dog food",
+      url: "/",
+    },
+    {
+      title: "Health & Digestion Dry Food",
+      url: "/",
+    },
+  ];
+
   const current = BREADCRUMB_DATA.pop();
 
   return (

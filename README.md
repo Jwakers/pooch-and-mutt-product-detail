@@ -20,7 +20,13 @@
 ## Page
 
 - [x] Header
-- [ ] Gallery
+- [x] Gallery
 - [x] Breadcrumb
 - [x] Product info
-- [ ] Product form
+- [x] Product form
+
+### Further updates
+
+- Conditional price rendering based on subscription selection
+- Improvements to fluid layout at intermediate breakpoints
+- Improvements to form components (organization, state management)
