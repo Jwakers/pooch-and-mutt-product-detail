@@ -79,7 +79,7 @@ export default function ProductAddForm() {
                       <Fragment key={value}>
                         <Label
                           className={cn(
-                            "border-black/30 flex cursor-pointer items-center justify-between gap-x-2 rounded-medium border p-6 transition-colors",
+                            "flex cursor-pointer items-center justify-between gap-x-2 rounded-medium border border-secondary p-6 transition-colors",
                             "hover:border-primary",
                             "focus-within:border-2 focus-within:border-primary",
                             "active:border-primary",

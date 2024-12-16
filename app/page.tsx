@@ -1,6 +1,7 @@
 import Breadcrumbs from "@/components/breadcrumbs";
 import NewsletterForm from "@/components/form/newsletter";
 import ProductAddForm from "@/components/form/product-add";
+import Gallery from "@/components/gallery";
 import { StarFilled, StarHalf } from "@/components/icons";
 import Grid from "@/components/layout/grid";
 
@@ -23,8 +24,8 @@ export default function Home() {
       <div className="container col-span-full my-2 md:col-start-6 md:px-0 lg:col-start-9 lg:row-start-1 lg:my-0">
         <Breadcrumbs />
       </div>
-      <div className="col-span-full md:col-span-6 md:row-span-2 lg:col-span-8">
-        [gallery]
+      <div className="col-span-full md:col-span-5 md:row-span-2 md:row-start-1 lg:col-span-8">
+        <Gallery />
       </div>
       <div className="relative col-span-full mt-6 pb-13 md:col-start-6 md:pb-12 lg:col-start-9 lg:row-start-2">
         <ProductHead />
