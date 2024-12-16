@@ -1,7 +1,6 @@
+import FormInput from "@/components/form/input";
 import { Cart } from "@/components/icons";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -17,20 +16,14 @@ export default function Home() {
         Secondary
       </Button>
 
-      <div className="inline-flex flex-col-reverse gap-3">
-        <Input type="email" id="email" placeholder="Email" />
-        <Label htmlFor="email">Email</Label>
-      </div>
-      <div className="inline-flex flex-col-reverse gap-3">
-        <Input
-          type="email"
-          disabled
-          id="email"
-          placeholder="Email"
-          className="peer"
-        />
-        <Label htmlFor="email">Email</Label>
-      </div>
+      <FormInput
+        id="email"
+        label="Email"
+        inputProps={{
+          type: "email",
+          placeholder: "Email",
+        }}
+      />
     </div>
   );
 }
