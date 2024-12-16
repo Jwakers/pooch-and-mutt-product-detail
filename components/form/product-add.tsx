@@ -130,7 +130,7 @@ export default function ProductAddForm() {
             </div>
           </div>
         </div>
-        <div className="sticky bottom-0 rounded-tl-medium rounded-tr-medium bg-primary px-6 pb-8 pt-5 shadow-[0px_0px_16px_0px_rgba(0,_0,_0,_0.25)] md:static md:mt-8 md:p-0 md:shadow-none">
+        <div className="fixed bottom-0 w-full rounded-tl-medium rounded-tr-medium bg-primary px-6 pb-8 pt-5 shadow-[0px_0px_16px_0px_rgba(0,_0,_0,_0.25)] md:static md:mt-8 md:p-0 md:shadow-none">
           <Button type="submit" className="w-full">
             Add to basket
           </Button>

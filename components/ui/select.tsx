@@ -25,7 +25,7 @@ const SelectTrigger = React.forwardRef<
       "hover:border-primary data-[placeholder]:hover:border-primary",
       "active:border-2 data-[state=open]:border-2 data-[state=open]:border-primary",
       "focus:border-2 focus-visible:outline-none focus-visible:ring-2",
-      "disabled:cursor-not-allowed disabled:bg-disabled disabled:text-disabled",
+      "disabled:cursor-not-allowed disabled:border-minimal disabled:bg-disabled disabled:text-disabled",
       className,
     )}
     {...props}

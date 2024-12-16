@@ -1,4 +1,5 @@
 import Breadcrumbs from "@/components/breadcrumbs";
+import NewsletterForm from "@/components/form/newsletter";
 import ProductAddForm from "@/components/form/product-add";
 import { StarFilled, StarHalf } from "@/components/icons";
 import Grid from "@/components/layout/grid";
@@ -25,9 +26,21 @@ export default function Home() {
       <div className="col-span-full md:col-span-6 md:row-span-2 lg:col-span-8">
         [gallery]
       </div>
-      <div className="relative col-span-full mt-6 md:col-start-6 lg:col-start-9 lg:row-start-2">
+      <div className="relative col-span-full mt-6 pb-13 md:col-start-6 md:pb-12 lg:col-start-9 lg:row-start-2">
         <ProductHead />
         <ProductAddForm />
+        <div className="container my-7 space-y-2 text-secondary md:my-8 md:px-0">
+          <p>Grain-free, junk-free complete dry food for sensitive dogs</p>
+          <ul className="list-disc pl-8">
+            <li>Hypoallergenic</li>
+            <li>Vet recommended</li>
+            <li>Prebiotics for gut health</li>
+          </ul>
+        </div>
+        <div className="container">
+          <hr className="border-minimal md:hidden" />
+        </div>
+        <NewsletterForm />
       </div>
     </Grid>
   );
