@@ -1,6 +1,7 @@
 import { FormInput, FormSelect } from "@/components/form/inputs";
 import { Cart } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { cn } from "@/lib/utils";
@@ -44,6 +45,20 @@ export default function Home() {
           <RadioGroupItem value="compact" />
         </Label>
       </RadioGroup>
+
+      <div className="group flex items-center gap-4">
+        <Checkbox id="terms" />
+        <label
+          htmlFor="terms"
+          className={cn(
+            "text-p2",
+            "peer-disabled:cursor-not-allowed peer-disabled:text-disabled",
+            "group-hover:cursor-pointer",
+          )}
+        >
+          Accept terms and conditions
+        </label>
+      </div>
     </div>
   );
 }
