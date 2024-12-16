@@ -147,21 +147,21 @@ export default {
         "1.125rem",
         {
           lineHeight: "1.625rem",
-          fontWeight: 400,
+          fontWeight: 300,
         },
       ],
       p2: [
         "1rem",
         {
           lineHeight: "1.5rem",
-          fontWeight: 400,
+          fontWeight: 300,
         },
       ],
       c1: [
         "0.625rem",
         {
           lineHeight: "0.875rem",
-          fontWeight: 400,
+          fontWeight: 300,
         },
       ],
       "button-default": [

@@ -9,7 +9,7 @@
 - [x] Add icons
 - [x] Add logo
 - [x] Add button component (shadcn)
-- [ ] Add input components: text, radio, select (shadcn)
+- [ ] Add input components: text, radio, select, checkbox (shadcn)
 
 ## Layout
 
@@ -19,9 +19,8 @@
 
 ## Page
 
-- [ ] Header
-- [ ] Footer
 - [ ] Dummy data
+- [ ] Header
 - [ ] Gallery
 - [ ] Breadcrumb
 - [ ] Product info

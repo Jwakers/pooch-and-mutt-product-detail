@@ -1,6 +1,8 @@
 import { FormInput, FormSelect } from "@/components/form/inputs";
 import { Cart } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -27,6 +29,21 @@ export default function Home() {
       />
 
       <FormSelect id="city" label="City" />
+
+      <RadioGroup>
+        <Label
+          className={cn(
+            "flex cursor-pointer items-center justify-between gap-x-2 rounded-medium border border-black/30 p-6 transition-colors",
+            "hover:border-primary",
+            "focus-within:border-2 focus-within:border-primary",
+            "active:border-primary",
+            "has-[[data-state=checked]]:border-primary",
+          )}
+        >
+          <span className="text-p2">Subscription</span>
+          <RadioGroupItem value="compact" />
+        </Label>
+      </RadioGroup>
     </div>
   );
 }
