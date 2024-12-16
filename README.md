@@ -19,8 +19,8 @@
 
 ## Page
 
-- [ ] Dummy data
 - [x] Header
 - [ ] Gallery
-- [ ] Breadcrumb
-- [ ] Product info
+- [x] Breadcrumb
+- [x] Product info
+- [ ] Product form
