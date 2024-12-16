@@ -1,4 +1,4 @@
-import FormInput from "@/components/form/input";
+import { FormInput, FormSelect } from "@/components/form/inputs";
 import { Cart } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -16,14 +16,17 @@ export default function Home() {
         Secondary
       </Button>
 
+      <FormInput id="email" label="Email" type="email" placeholder="Email" />
+
       <FormInput
         id="email"
         label="Email"
-        inputProps={{
-          type: "email",
-          placeholder: "Email",
-        }}
+        type="email"
+        placeholder="Email"
+        disabled
       />
+
+      <FormSelect id="city" label="City" />
     </div>
   );
 }

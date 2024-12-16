@@ -14,6 +14,7 @@ export default {
         secondary: "var(--cream-200)",
         invert: "var(--neutral-1000)",
         brand: "var(--brand-50)",
+        disabled: "rgba(0, 0, 0, 0.06)",
       },
       opacity: {
         "04": "0.04",

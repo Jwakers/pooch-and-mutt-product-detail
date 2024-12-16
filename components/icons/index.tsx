@@ -28,7 +28,7 @@ function ChevronDown(props: React.SVGProps<SVGSVGElement>) {
     >
       <path
         d="M12 16.5L4.5 9L5.55 7.95L12 14.4L18.45 7.95L19.5 9L12 16.5Z"
-        fill="none"
+        fill="currentColor"
       />
     </svg>
   );
