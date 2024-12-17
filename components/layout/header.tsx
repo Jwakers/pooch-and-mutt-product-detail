@@ -43,7 +43,7 @@ export default function Header() {
           <HeaderButton title="user">
             <User />
           </HeaderButton>
-          <HeaderButton title="cart">
+          <HeaderButton title="cart" className="flex">
             <Cart />
           </HeaderButton>
         </div>
