@@ -30,3 +30,8 @@
 - Conditional price rendering based on subscription selection
 - Improvements to fluid layout at intermediate breakpoints
 - Improvements to form components (organization, state management)
+- Client side error handling for forms
+
+### What I would do differently
+
+I like the use of shadcn/ui components as it offers a level of consistency and accessibility. However, introducing them AFTER making the design system in the tailwind config did mean their implementation became a little more cumbersome. Done differently I would have initialized shadcn/ui in the project before creating the design system and then used that boilerplate to add in the design tokens/primitives. This would mean further adoption of shadcn/ui components would be much more streamlined.

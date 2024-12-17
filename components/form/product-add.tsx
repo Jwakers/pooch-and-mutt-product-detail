@@ -42,8 +42,8 @@ export default function ProductAddForm() {
 
   return (
     <Form {...form}>
+      {/* In reality I would send this data to a server action for processing. */}
       <form action="/">
-        {/* In reality I would send this data to a server action for processing. */}
         <div className="container md:px-0">
           <FormField
             control={form.control}
