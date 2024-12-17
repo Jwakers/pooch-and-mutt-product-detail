@@ -28,9 +28,10 @@
 ### Further updates
 
 - Conditional price rendering based on subscription selection
-- Improvements to fluid layout at intermediate breakpoints
+- Improvements to fluid layout at intermediate breakpoints (not in design files)
 - Improvements to form components (organization, state management)
 - Client side error handling for forms
+- Newsletter form validation (checkbox acting as an optional field)
 
 ### What I would do differently
 

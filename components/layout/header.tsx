@@ -1,5 +1,7 @@
+import { cn } from "@/lib/utils";
 import logo from "@/public/logo-full.svg";
 import Image from "next/image";
+import Link from "next/link";
 import { Cart, Menu, Search, User } from "../icons";
 
 const NAV_ITEMS = ["Shop", "find your food", "About", "Blog"];
@@ -13,7 +15,12 @@ export default function Header() {
             {NAV_ITEMS.map((item) => (
               // Note: 10px is not included in the spacing design system
               <li key={item} className="px-5 py-[0.625rem]">
-                {item}
+                <Link
+                  href="/"
+                  className="transition-colors hover:text-secondary"
+                >
+                  {item}
+                </Link>
               </li>
             ))}
           </ul>
@@ -30,26 +37,35 @@ export default function Header() {
         </div>
 
         <div className="flex justify-end">
-          <button
-            title="search"
-            className="hidden h-[2.75rem] w-[2.75rem] items-center justify-center md:flex"
-          >
+          <HeaderButton title="search">
             <Search />
-          </button>
-          <button
-            title="search"
-            className="hidden h-[2.75rem] w-[2.75rem] items-center justify-center md:flex"
-          >
+          </HeaderButton>
+          <HeaderButton title="user">
             <User />
-          </button>
-          <button
-            title="search"
-            className="flex h-[2.75rem] w-[2.75rem] items-center justify-center"
-          >
+          </HeaderButton>
+          <HeaderButton title="cart">
             <Cart />
-          </button>
+          </HeaderButton>
         </div>
       </div>
     </header>
+  );
+}
+
+function HeaderButton({
+  children,
+  className,
+  ...rest
+}: React.PropsWithChildren<React.ComponentProps<"button">>) {
+  return (
+    <button
+      className={cn(
+        "hidden h-[2.75rem] w-[2.75rem] items-center justify-center transition-colors hover:text-secondary md:flex",
+        className,
+      )}
+      {...rest}
+    >
+      {children}
+    </button>
   );
 }
