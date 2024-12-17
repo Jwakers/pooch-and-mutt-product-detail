@@ -104,7 +104,7 @@ function Thumb({ image, selected, onClick }: ThumbProps) {
     <div
       className={cn(
         "relative h-[140px] w-[140px] overflow-hidden rounded-medium",
-        selected && "border-2 border-primary",
+        selected && "border-2 border-primary [border-style:inset]",
       )}
     >
       <button onClick={onClick} type="button" title="Select image">
