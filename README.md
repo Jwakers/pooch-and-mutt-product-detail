@@ -33,6 +33,7 @@
 - Client side error handling for forms
 - Newsletter form validation (checkbox acting as an optional field)
 - Fix border layout shift. Some input states have an increase in border size leading to a small but noticeable layout shift. Refactor these borders to use drop shadow instead.
+- Refactor the product form button to sticky not fixed for maintainability with larger/changing product page layouts
 
 ### What I would do differently
 

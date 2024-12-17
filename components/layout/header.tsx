@@ -8,12 +8,12 @@ const NAV_ITEMS = ["Shop", "find your food", "About", "Blog"];
 
 export default function Header() {
   return (
-    <header className="border-b border-minimal py-5">
+    <header className="border-b border-minimal py-4 md:py-5">
       <div className="container grid grid-cols-[1fr_auto_1fr] items-center">
         <nav>
           <ul className="hidden items-center md:flex">
             {NAV_ITEMS.map((item) => (
-              // Note: 10px is not included in the spacing design system
+              // Note: 10px is not included in the design system spacing (py-[0.625rem])
               <li key={item} className="px-5 py-[0.625rem]">
                 <Link
                   href="/"
