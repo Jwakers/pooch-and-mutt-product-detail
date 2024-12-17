@@ -32,6 +32,7 @@
 - Improvements to form components (organization, state management)
 - Client side error handling for forms
 - Newsletter form validation (checkbox acting as an optional field)
+- Fix border layout shift. Some input states have an increase in border size leading to a small but noticeable layout shift. Refactor these borders to use drop shadow instead.
 
 ### What I would do differently
 
